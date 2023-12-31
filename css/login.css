@@ -1,0 +1,91 @@
+.content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #EFE9E7;
+}
+
+.loginbox{
+    min-width: 300px;
+    width: 30%;
+    margin: 0 auto;
+    color: #3D1101;
+    text-align: center;
+}
+
+.loginbox h5{
+    font-size: 20px;
+    text-align: center;
+    font-family: NotoSansCJKtc-Medium;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.formlogin{
+    border-top: 3px solid #FF5E45;
+    text-align: left;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.16);
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.loginbox .pure-form-stacked .formframe{
+    padding: 0;
+}
+
+
+.loginbox .pure-form-stacked .formtitle{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 16px;
+    color: #3D1101;
+}
+
+.loginbox .pure-form-stacked .textbox{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 32px;
+    font-family: Arial,'Font Awesome 6 Free';
+}
+
+
+.formlogin .forget{
+    display: block;
+    margin-top: -15px;
+    font-size: 14px;
+    line-height: 19px;
+    color:#FF5E45;
+    text-decoration: none;
+}
+
+.formlogin .forget:hover{
+    text-decoration: underline;
+}
+
+
+.loginbox .formlogin .btn-signin{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 6%;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    width: 46%;
+    font-size: 14px;
+}
+
+.loginbox .formlogin .btn-login{
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #F56C23;
+    border-radius: 3px;
+    width: 46%;
+    font-size: 14px;
+}
+
+@media(max-width:568px){
+    .loginbox{
+        width: 80%;
+    }
+}

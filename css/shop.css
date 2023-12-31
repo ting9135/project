@@ -1,0 +1,272 @@
+.content{
+    display: flex;
+    background: #EFE9E7;
+    padding-top: 48px;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.foodmenu{
+    width: 23.4%;
+    color: #3D1101;
+}
+
+.foodmenutitle{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.foodmenutitle i{
+    margin-right: 15px;
+    font-size: 32px;
+}
+
+.foodmenu li a{
+    display: block;
+    line-height: 32px;
+    border-bottom: 1px solid #3D1101;
+    padding-left: 9px;
+    color: #3D1101;
+    text-decoration: none;
+}
+
+.foodmenu li a:hover{
+    color: #FFFFFF;
+    background: #3D1101;
+}
+
+.foodlist{
+    width: 76.6%;
+    padding-left: 20px;
+}
+
+
+.foodlist .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.searchbox{
+    width: 65.7%;
+    display: flex;
+}
+
+.searchbox .searchinput{
+    width: 92.17%;
+    height: 32px;
+    border: 2px solid #3D1101;
+    background:  #EFE9E7;
+    border-radius: 0px;
+}
+
+.btn-search{
+    width: 7.83%;
+    height: 32px;
+    color: #FFFFFF;
+    background: #3D1101;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.checkout{
+    display: flex;
+    align-items: center;
+}
+
+.checkout a{
+    display: block;
+    text-decoration: none;
+    color: #3D1101;
+}
+
+.checkout a:hover{
+    color: #FF5E45;
+}
+
+.checkout .line{
+    height: 14px;
+    border-left: 1px solid #3D1101;
+    margin-left: 12px;
+    margin-right: 17px;
+}
+
+.cart{
+    font-size: 29px;
+}
+
+.foodbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foodbox li{
+    width: 31.4%;
+    text-align: center;
+    color: #3D1101;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.foodbox img{
+    height: auto;
+    width: 100%;
+}
+
+
+.foodbox h5{
+    margin-top: 11px;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.foodbox .line{
+    display: inline-block;
+    width: 91px;
+    border-bottom: 1px solid #3D1101;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.foodbox .cost{
+    font-size: 20px;
+    font-family: Roboto-Light;
+    line-height: 24px;
+}
+
+.foodbox .add{
+    display: inline-block;
+    width: 90.909%;
+    color: #FF5E45;
+    font-size: 16px;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    text-decoration: none;
+    line-height: 24px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+
+.foodbox .add:hover{
+    color: #FFFFFF;
+    background: #FF5E45;
+}
+
+.heart{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: #FFFFFF;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.heart-solid{
+    display: none;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: #FFFFFF;
+    font-size: 20px;
+    z-index: 90;
+}
+
+.heart:hover + .heart-solid{
+    display: block;
+}
+
+.note{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00CC99;
+    clip-path: polygon(20% 0, 80% 0, 100% 20%, 0 20%);
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    transform: rotate(-315deg);
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 21px;
+    font-family: NotoSansCJKtc-Bold;
+}
+
+
+.notetri1{
+    position: absolute;
+    top: 4px;
+    right: 43px;
+    width: 55px;
+    height: 55px;
+    clip-path: polygon(0 0, 0 20%, 20% 0);
+    transform: rotate(45deg);
+    background: #078F6D;
+}
+
+.notetri2{
+    position: absolute;
+    top: 43.5px;
+    right: 4px;
+    width: 55px;
+    height: 55px;
+    clip-path: polygon(0 0, 0 20%, 20% 0);
+    transform: rotate(135deg);
+    background: #078F6D;
+}
+
+
+@media(max-width:768px){
+    .content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .foodmenu{
+        width: 30%;
+    }
+
+    .foodbox li{
+        width: 48%;
+    }
+}
+
+
+@media(max-width:568px){
+    .content{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .foodmenu{
+        width: 100%;
+    }
+
+    .container,.foodbox{
+        flex-direction: column;
+    }
+
+    .foodlist{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .searchbox{
+        width: 100%;
+        margin-top: 23px;
+        margin-bottom: 20px;
+    }
+
+    .checkout{
+        justify-content: flex-end;
+    }
+
+    .foodbox li{
+        width: 100%;
+    }
+}
